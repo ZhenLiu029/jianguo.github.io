@@ -1,103 +1,146 @@
-   *{
-        margin: 0;
-        box-sizing: border-box;
-        text-align: center;
-    }
-   body{
-     font-size: calc(10px+1vh);
-     height: 98vh ;    
-     position: relative;
-    }
-    header{font-size: 2em;
-           height: 15% ;
-           position: relative;
-    }
-    nav{ height: 6% ;}
-    nav button{
-        font-size: 1.2em;
-       }
-    button.small{
-        width: 30%;
-        padding: 0.1em 0.2em;  
-    }
-    button.big{
-        width: 45%;
-        padding: 0.1em 0.5em;  
-    }
-    main{
-        margin-top: 1em;
-        font-size: 1.6em;
-        height: 60% ;
-        position: relative;
-    }
-    main p#en{
-        font-size: 1.6em;
-        color:rgb(126, 200, 189);
-        text-shadow: 2px 2px rgb(128, 128, 128) ;
-    }
-    main p#pn{
-        font-size: 1.2em;
-        color:rgb(32, 71, 178);
-       }
-    form{
-        position: absolute ;
-        width: 90% ;
-        height: 50% ;
-        border: 2px solid gray;
-        left: 5% ;
-        top: 10% ;
-        background-color: antiquewhite;
-        font-size: 1.1em ;
-    }
-    form input{
-        font-size: 1.1em ;
-        width: 6em;
-    }
-    form button{
-        font-size: 1.3rem ;
-        margin-right: 1em;
-    }
-    footer{
-        height: 20% ;
-        font-size:1.2em;
-    }
-    span#level{
-        display: block;
-        position: absolute;
-        right:20px;
-        top:1px;
-        color:blue;
-        font-size: 0.5em;
-    }
-    p.cn{
-      border:1px solid blue ;
-      background-color: antiquewhite;
-      cursor: pointer;
-      font-size: 0.8em;
-      margin-bottom: 0.2em;
-    }
-    p.cn.right{
-      background-color: yellow;
-      color: red ;
-    }
-    p.cn.wrong{
-      background-color: gray;
-      color:white;
-    }
-    p.cn:hover{
-        color: blue ;
-    }
-    header span#response{
-        font-size: 0.8em;
-        color: red;
-        position: absolute;
-        right: 0.5em;
-        top:2em;
-    }
-    p#log{
-        background-color: gray;
-        color: white;
-        font-size: 0.65em;
-        padding: 5px 10px;
-        text-align: center;
-    }
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body{
+    font-size: calc(10px+1vh);
+    height: 98vh;
+    position: relative;
+    background-color: #f0f0f0; /* 背景颜色 */
+}
+header{
+    font-size: 2em;
+    height: 15%;
+    position: relative;
+    color: #333; /* 标题颜色 */
+}
+nav{
+    height: 6%;
+}
+nav button{
+    font-size: 1.2em;
+    background-color: #007BFF; /* 按钮背景 */
+    color: white; /* 按钮字体颜色 */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* 圆角效果 */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+nav button:hover{
+    background-color: #0056b3; /* 鼠标悬停时颜色 */
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+button.small{
+    width: 30%;
+    padding: 0.1em 0.2em;
+    background-color: #28a745; /* 绿色背景 */
+    color: white;
+}
+button.big{
+    width: 45%;
+    padding: 0.1em 0.5em;
+    background-color: #17a2b8; /* 蓝色背景 */
+    color: white;
+}
+button.small:hover, button.big:hover{
+    opacity: 0.8; /* 鼠标悬停时透明度 */
+}
+main{
+    margin-top: 1em;
+    font-size: 1.6em;
+    height: 60%;
+    position: relative;
+    color: #444; /* 文字颜色 */
+}
+main p#en{
+    font-size: 1.6em;
+    color: rgb(126, 200, 189);
+    text-shadow: 2px 2px rgb(128, 128, 128);
+}
+main p#pn{
+    font-size: 1.2em;
+    color: rgb(32, 71, 178);
+}
+form{
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    border: 2px solid #ccc;
+    left: 5%;
+    top: 10%;
+    background-color: #faf3e0; /* 更柔和的背景 */
+    font-size: 1.1em;
+    border-radius: 10px; /* 圆角效果 */
+}
+form input{
+    font-size: 1.1em;
+    width: 6em;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px; /* 圆角输入框 */
+    border: 1px solid #ccc;
+}
+form button{
+    font-size: 1.3rem;
+    margin-right: 1em;
+    background-color: #007BFF; /* 按钮背景 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+form button:hover{
+    background-color: #0056b3; /* 鼠标悬停时颜色 */
+    transform: scale(1.1);
+}
+footer{
+    height: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+span#level{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 1px;
+    color: #007BFF; /* 蓝色字体 */
+    font-size: 0.5em;
+}
+p.cn{
+    border: 1px solid #007BFF;
+    background-color: #faf3e0;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-bottom: 0.2em;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+p.cn.right{
+    background-color: yellow;
+    color: red;
+}
+p.cn.wrong{
+    background-color: gray;
+    color: white;
+}
+p.cn:hover{
+    color: blue;
+    background-color: #e0f7fa; /* 鼠标悬停时背景 */
+}
+header span#response{
+    font-size: 0.8em;
+    color: red;
+    position: absolute;
+    right: 0.5em;
+    top: 2em;
+}
+p#log{
+    background-color: #333;
+    color: white;
+    font-size: 0.65em;
+    padding: 5px 10px;
+    text-align: center;
+}
